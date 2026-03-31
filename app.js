@@ -11,7 +11,7 @@ app.use(express.json());
 app.get('/status', (req,res) => {
     res.json({
         status: 'Running', //sets response status to 'running'
-        timestamp: new Data().toISOString()  //creates a timestamp with current time, converted to str
+        timestamp: new Date().toISOString()  //creates a timestamp with current time, converted to str
     });
 });
 
